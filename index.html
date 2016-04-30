@@ -17,7 +17,7 @@
 	font-family: "幼圆";
 	color: #0FF;	
 }
-    
+     </style>
     
   </head>
   
@@ -32,8 +32,33 @@
 <h1 id=tick2 class="a"></h1>
 	
 <script> 
-<iframe src="http://time.bj.cn/e/" frameBorder=0 width=195 height=20 allowtransparency></iframe>
-
+ <!--
+ function show2(){ 
+ if (!document.all) 
+ return 
+ var Digital=new Date() 
+ var hours=Digital.getHours() 
+ var minutes=Digital.getMinutes() 
+ var seconds=Digital.getSeconds() 
+ var p="当前时间"
+ var dn="上午" 
+ if (hours>12){ 
+ dn="下午" 
+ hours=hours-12 
+ } 
+ if (hours==0) 
+ hours=12 
+ if (minutes<=9) 
+ minutes="0"+minutes 
+ if (seconds<=9) 
+ seconds="0"+seconds 
+ var ctime=p+":&nbsp;&nbsp;"+dn+" &nbsp;"+hours+":"+minutes+":"+seconds
+ tick2.innerHTML="<b style='color:#0ff;'>"+ctime+"</b>" 
+ setTimeout("show2()",1000) 
+ } 
+ window.onload=show2 
+ //--> 
+</script>
 
 <table width="100%" border="0">
    <tr>

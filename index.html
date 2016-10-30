@@ -1,100 +1,34 @@
 <!DOCTYPE html>
-<html lang="en-us">
-
-  <head>
-    <meta charset="UTF-8">
-    <title>Linai081795.GitHub.io by linai081795</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
-    
-    
-     <style type="text/css">
-.a {
-	text-align: center;
-	font-family: "幼圆";
-	color: #0FF;	
-}
-     </style>
-    
-  </head>
-  
- 
-  
-<body>
-    <section class="page-header">
-      <h1 class="project-name">Linai081795.GitHub.io</h1>
-      <h2 class="project-tagline">零爱的博客</h2>
-    </section>
-
-<h1 id=tick2 class="a"></h1>
+<html>
+	<head>
+	    <meta charset="UTF-8">
+		<script>
+			function time(){
+				var Day=new Date();
+				var h=Day.getHours();
+				//console.log(h);
+				var m=Day.getMinutes();
+				var s=Day.getSeconds();
+				//console.log(s);
+				document.getElementById("time1").innerHTML="<h1>现在时间:"+h+"点:"+m+"分:"+s+"秒</h1>";
+				//console.log(time());
+				var mytime=setTimeout("time()",1000);
+			}
+			</script>
+			<style>
+				h1{
+					overflow:auto;
+					font-size:70px;
+					margin:auto;
+					top:0;
+					left:0;
+					right:0;
+					bottom:0;
+				}
+			</style>
+	</head>
 	
-<script> 
- <!--
- function show2(){ 
- if (!document.all) 
- return 
- var Digital=new Date() 
- var hours=Digital.getHours() 
- var minutes=Digital.getMinutes() 
- var seconds=Digital.getSeconds() 
- var p="当前时间"
- var dn="上午" 
- if (hours>12){ 
- dn="下午" 
- hours=hours-12 
- } 
- if (hours==0) 
- hours=12 
- if (minutes<=9) 
- minutes="0"+minutes 
- if (seconds<=9) 
- seconds="0"+seconds 
- var ctime=p+":&nbsp;&nbsp;"+dn+" &nbsp;"+hours+":"+minutes+":"+seconds
- tick2.innerHTML="<b style='color:#0ff;'>"+ctime+"</b>" 
- setTimeout("show2()",1000) 
- } 
- window.onload=show2 
- //--> 
-</script>
-
-<table width="100%" border="0">
-   <tr>
-     <th scope="row"><a href="https://github.com/linai081795/Miui-device-hlte">Miui</a></th>
-     <td><a href="https://github.com/linai081795/Flyme-device-hlte">Flyme</a></td>
-     <td><a href="https://github.com/linai081795/Tos-device-hlte">Tos</a></td>
-   </tr>
- </table>
- 
-<hr color="red" />
-<script language="javascript">
-<!--
-now = new Date()
-hour = now.getHours()
-if (hour < 12) {
-document.write("现在是: " + now.toLocaleString())
-} else if (hour < 18){
-document.write("现在是: " + now.toLocaleString())
-} else if (hour >= 18) {
-document.write("现在是: " + now.toLocaleString())
-}
-// --></script>
-<iframe src="http://time.bj.cn/e/" frameBorder=0 width=195 height=20 allowtransparency></iframe>
-
-
-     <font color="red" size="45" ><marquee  behavior="scroll" loop="-1" bgcolor="#00FFFF" scrollamount="30">
-测试中。。。。。
-BUG   急速状态  无法显示时间
-</marquee>
-</font>
-<hr color="red" />
-
- 
-
-    </section>
-
-  
-  </body>
+	<body onload="time()">
+	<div id="time1"></div>
+	</body>
 </html>
